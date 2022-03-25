@@ -1,0 +1,131 @@
+:root {
+  --thm-font: "Inter", sans-serif;
+  --heading-font: "Inter", sans-serif;
+  --special-font: "Handlee", cursive;
+  --thm-color: #6e7673;
+  --thm-base: #49a760;
+  --thm-primary: #f7c35f;
+  --thm-secondary: #ed4b4b;
+  --thm-special: #5366c2;
+  --thm-black: #255946;
+  --thm-black2: #1d1c1c;
+  --thm-text-dark: #8e96a0;
+}
+/* #header {
+  position: fixed;
+} */
+
+.thm-btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  outline: none !important;
+  background-color: var(--thm-base);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: var(--thm-font);
+  padding: 16.5px 39.5px;
+  transition: 500ms;
+  text-decoration: none;
+}
+.thm-btn:hover {
+  color: var(--thm-base);
+  background-color: var(--thm-primary);
+}
+.tagline{
+  font-size:20px;
+}
+.eco{
+  font-family: 'Handlee', cursive;
+  font-size: 100px;
+  font-weight: 700;
+}
+.fa-pagelines{
+  font-size: 60px;
+  color:var(--thm-primary);
+  position: relative;
+  top: -15px;
+  margin-left: 20px;
+}
+.fa-pagelines:hover{
+  cursor: default;
+  transition: 1000ms;
+}
+.shape-start-slider{
+  position: absolute;
+  z-index: 2;
+  max-width:100%
+}
+.shape-end-slider{
+  position: absolute;
+  bottom: -1px;
+  z-index: 2;
+  transform: rotate(180deg);
+  max-width:100%;
+}
+.service-part-1{
+  background-color: var(--thm-primary);
+  width: 100%;
+  height: max-content;
+  padding-bottom:50px
+}
+.shape-end-service1{
+  position: relative;
+  bottom: -68px;
+  max-width: 100%;
+}
+.service-one__box img{
+  border-radius:5px;
+}
+.service1{
+  position: relative;
+  bottom: -45px;
+  width: 100%;
+}
+.service-item-1{
+  width: 33,34%;
+  padding: 0 20px;
+}
+.img-service1 img{
+  width: 100%;
+  height: auto;
+  border-radius:5px;
+  z-index: 3;
+}
+.btn-service1{
+  display: flex;
+  justify-content:center;
+  max-width:100%;
+}
+.btn-service-item-1{
+  max-width: 100%;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  height:50px;
+  border-radius: 10px;
+  transition: 500ms;
+  background-color: #fff;
+  border: none;
+}
+.btn-service-item-1:hover{
+  background-color: var(--thm-base);
+}
+.btn-service-item-1 a {
+  border: none;
+  outline: none !important;
+  color: var(--thm-base);
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: var(--thm-font);
+  padding:0;
+  transition: 500ms;
+  text-decoration: none;
+}
+.btn-service-item-1 a:hover {
+  color: #fff;
+}

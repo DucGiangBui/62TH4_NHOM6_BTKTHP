@@ -1,0 +1,97 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+header {
+  width: 100%;
+  font-weight: 600;
+}
+.navbar {
+  height: 90px;
+  color: white;
+}
+.container-fluid {
+  width: 70%;
+  padding: 0 ;
+  display: flex;
+  justify-content: center;
+}
+.navbar-nav{
+    margin: auto;
+}
+.navbar-brand {
+    margin:0;
+  max-width: 15%;
+}
+.navbar-brand > .logo {
+  max-width: 100%;
+}
+.nav-item {
+  margin: 0 15px;
+  color: black;
+}
+a {
+  color: black;
+  
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+i {
+  margin: 0 20px;
+  color: rgba(0, 0, 0, 0.637);
+  transform: scale(1.5, 1.5);
+}
+i:hover {
+  cursor: pointer;
+  color: rgb(72, 167, 95);
+}
+.main-header__info {
+  display: flex;
+  align-items: center;
+  max-width:50%;
+}
+.main-header__info-phone {
+  display: flex;
+  margin-left:10px;
+  width: max-content;
+  max-width: 60%;
+  align-items: flex-start;
+  background-color: rgb(247, 195, 95);
+  border-radius: 8px;
+  padding: 10px 9px;
+  transition: all 500ms ease;
+  text-decoration: none;
+}
+.main-header__info-phone > i {
+  margin: auto;
+  padding: 5px;
+  color: #fff;
+}
+.main-header__info-phone-content {
+  margin-left: 10px;
+}
+.main-header__info-phone:hover {
+   background-color: rgb(72, 167, 95);
+  
+  }
+.main-header__info-phone-content .main-header__info-phone-text {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+.main-header__info-phone-content .main-header__info-phone-title {
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;
+  color: #fff;
+  display: block;
+}
