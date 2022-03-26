@@ -18,72 +18,76 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Pages
+            <div class="container-xl">
+                <a class="navbar-brand" href="#"><img class="logo" src="images/logo-dark.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active option-header" aria-current="page" href="#"
+                                style="color:#49a760">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active option-header" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu option" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item sub-option-header" href="#">Service</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">service Detail</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Contacts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shops
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects1</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects2</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+                                News
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item sub-option-header" href="#">Global</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Agrikon</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                    <div class="main-header__info">
+                        <a href="#" class="search-toggler main-header__search-btn"><i
+                                class="fa-solid fa-magnifying-glass"></i></a>
+                        <a class="main-header__cart-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="tel:0833200319" class="main-header__info-phone">
+                            <i class="fa-solid fa-phone"></i></i>
+                            <span class="main-header__info-phone-content">
+                                <span class="main-header__info-phone-text">Phone Number</span>
+                                <span class="main-header__info-phone-title">0833200319</span>
+                            </span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Service</a></li>
-                            <li><a class="dropdown-item" href="#">service Detail</a></li>
-                            <li><a class="dropdown-item" href="#">Contacts</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Shops
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Projects1</a></li>
-                            <li><a class="dropdown-item" href="#">Projects2</a></li>
-                            <li><a class="dropdown-item" href="#">Projects3</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            News
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Global</a></li>
-                            <li><a class="dropdown-item" href="#">Agrikon</a></li>
-                        </ul>
-                    </li>
-                    </li>
-                </ul>
-                <div class="main-header__info">
-                    <a href="#" class="search-toggler main-header__search-btn"><i
-                            class="fa-solid fa-magnifying-glass"></i></a>
-                    <a class="main-header__cart-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a href="tel:0833200319" class="main-header__info-phone">
-                        <i class="fa-solid fa-phone"></i></i>
-                        <span class="main-header__info-phone-content">
-                            <span class="main-header__info-phone-text">Phone Number</span>
-                            <span class="main-header__info-phone-title">0833200319</span>
-                        </span>
-                    </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
+        <img class="shape-start-slider" src="images/shapes/ripped-paper-header-1.png" alt="">
     </header>
-    <img src="images/main-slider-1-1.jpg" alt="" style="max-width:100%">
+    <img src="images/backgrounds/cta-2-bg-1.jpg" alt="">
     <!-- <iframe src="footer.html" width="100%" height="495,676px" scrolling="no"></iframe> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

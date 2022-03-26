@@ -34,41 +34,42 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="color:black">Home</a>
+                            <a class="nav-link active option-header" aria-current="page" href="#"
+                                style="color:#49a760">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" style="color:black">About</a>
+                            <a class="nav-link active option-header" aria-current="page" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Pages
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Service</a></li>
-                                <li><a class="dropdown-item" href="#">service Detail</a></li>
-                                <li><a class="dropdown-item" href="#">Contacts</a></li>
+                            <ul class="dropdown-menu option" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item sub-option-header" href="#">Service</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">service Detail</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Contacts</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Shops
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Projects1</a></li>
-                                <li><a class="dropdown-item" href="#">Projects2</a></li>
-                                <li><a class="dropdown-item" href="#">Projects3</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects1</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects2</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Projects3</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
+                            <a class="nav-link dropdown-toggle option-header" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:black">
                                 News
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Global</a></li>
-                                <li><a class="dropdown-item" href="#">Agrikon</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Global</a></li>
+                                <li><a class="dropdown-item sub-option-header" href="#">Agrikon</a></li>
                             </ul>
                         </li>
                         </li>
@@ -88,11 +89,10 @@
                 </div>
             </div>
         </nav>
-
+        <img class="shape-start-slider" src="images/shapes/ripped-paper-header-1.png" alt="">
     </header>
-    <main>
+    <main class="main">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <img class="shape-start-slider" src="images/shapes/ripped-paper-header-1.png" alt="">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -192,12 +192,63 @@
                     </div>
                 </div>
             </div>
-            <img class="shape-end-service1" src="images/shapes/ripped-paper-primary-up.png" alt="">
         </div>
-        <div class="main-2">
-            <img src="images/backgrounds/cta-1-bg-1.jpg" alt="">
-            <img src="images/backgrounds/cta-2-bg-1.jpg" alt="">
-            <img src="images/backgrounds/cta-3-bg-1.jpg" alt="">
+        <div class="service-part-2">
+
+            <img class="shape-end-service1" src="images/shapes/ripped-paper-primary-up.png" alt="">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-6 resources">
+                        <div class="img-first">
+                            <img alt="Bootstrap Image Preview" src="images/resources/about-1-1.jpg" />
+                        </div>
+                        <div class="img-second resources">
+                            <img alt="Bootstrap Image Preview" src="images/resources/about-1-2.jpg" />
+                        </div>
+                        <div class="img-third resources">
+                            <img alt="Bootstrap Image Preview" src="images/shapes/about-circle-1-1.png" />
+                            <h5 class="img-third-content">Trusted by</h5>
+                            <h5 class="img-third-content">8900</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 intro-blog">
+                        <img src="images/loader.png" alt="">
+                        <div class="block-title text-left">
+                            <div class="block-title__image"></div><!-- /.block-title__image -->
+                            <p>Welcome to agricon</p>
+                            <h3>Better Agriculture for
+                                Better Future</h3>
+                        </div>
+                        <div class="about-one__tagline">
+                            <p><br>We have 30 years of agriculture & eco farming experience globaly</p>
+                        </div>
+                        <div class="about-one__summery">
+                            <p><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo amet quia inventore
+                                quos minus omnis, porro tempore cupiditate veritatis deserunt laudantium architecto fuga
+                                itaque sint! Harum nesciunt libero sint exercitationem!</p>
+                        </div>
+                        <div class="about-one__icon-row">
+                            <div class="row" style="height:max-content">
+                                <div class="col-lg-6 " style="padding: 0 20px 0 0; height:max-content">
+                                    <div class="about-one__box">
+                                        <i class="fa-solid fa-apple-whole"></i>
+                                        <h4><a href="about.html">Professional
+                                                <br>Farmers</a></h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" style="padding: 0 20px 0 0">
+                                    <div class="about-one__box">
+                                        <i class="fa-solid fa-spa"></i>
+                                        <h4><a href="services.html">Organic & <br>Eco
+                                                Solutions</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class=" thm-btn">Discover More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- <iframe src="footer.html" width="100%" height="495,676px" scrolling="no"></iframe> -->
