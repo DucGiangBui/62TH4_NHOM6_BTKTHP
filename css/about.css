@@ -1,4 +1,7 @@
+
+
 .page-header__bg{
+	
     font-family:Inter,sans-serif ;
     height: 433px;
     width: 1640px;
@@ -127,7 +130,14 @@ div .container {
 .blog-card__content_a{
     color: rgb(37, 89, 70);
     text-decoration: none solid rgb(37, 89, 70);
+	-webkit-transition: all 500ms ease;
+  	transition: all 500ms ease;
+	
 }
+.blog-card__content_a:hover{
+    color: rgb(54, 150, 41);
+}
+
 .blog-card__content_h3 {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
@@ -173,20 +183,19 @@ div .container {
 	
 
 	/* Effects */
-	transform: none;
+	
 	transition: all 0.5s ease 0s;
 	outline: rgb(255, 255, 255) none 0px;
 	outline-offset: 0px;
 	box-sizing: border-box;
-	resize: none;
-	text-shadow: none;
-	text-overflow: clip;
-	word-wrap: normal;
-	box-shadow: none;
+	
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+.thm-btn:hover{
+	background-color: rgb(37, 89, 70);
 }
 .blog-card__date {
 	/* Font & Text */
@@ -219,6 +228,14 @@ div .container {
 	right: 30px;
 	left: 266px;
 	display: flex;
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	-webkit-box-pack: center;
+      	-ms-flex-pack: center;
+          	justify-content: center;
+  	-webkit-box-align: center;
+      	-ms-flex-align: center;
+         	align-items: center;
 
 	/* Effects */
 	box-sizing: border-box;
@@ -248,25 +265,14 @@ div .container {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 18px;
-	font-style: normal;
-	font-variant: normal;
 	font-weight: 700;
-	letter-spacing: normal;
 	line-height: 38.25px;
 	text-decoration: none solid rgb(255, 255, 255);
 	text-align: center;
-	text-indent: 0px;
-	text-transform: none;
-	vertical-align: middle;
-	white-space: normal;
-	word-spacing: 0px;
+	
 
 	/* Color & Background */
-	background-attachment: scroll;
 	background-color: rgb(37, 89, 70);
-	background-image: none;
-	background-position: 0% 0%;
-	background-repeat: repeat;
 	color: rgb(255, 255, 255);
 
 	/* Box */
@@ -274,14 +280,9 @@ div .container {
 	width: 171.486px;
 	padding: 16.5px 39.5px;
 
-	/* Positioning */
-	position: static;
-	display: inline-block;
-
-
 	/* Effects */
 	transition: all 0.5s ease 0s;
 	outline: rgb(255, 255, 255) none 0px;
 	box-sizing: border-box;
-
 }
+
