@@ -124,3 +124,10 @@ i:hover {
   z-index: 2;
   max-width:100%
 }
+
+.option-header:hover {
+  color: var(--thm-base);
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: ease-out 300ms;
+}
