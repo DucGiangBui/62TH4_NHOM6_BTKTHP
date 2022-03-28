@@ -322,13 +322,38 @@
 }
 .blog-card__meta{
     display: flex;
+	height: 14px;
 }
 .blog-card__meta_a1{
-    color: #6e7673
+    color: #6e7673;
+	width: 82.1375px;
+	font-size: 14px;
 }
 .blog-card__meta_a2{
     color: #6e7673;
     margin:0 0 0 15px;
+	width: 82.1375px;
+	font-size: 14px;
+}
+.fa-user-circle{
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	width: 13.5625px;
+	margin: 0 5px 0 0;
+	min-height: auto;
+	min-width: auto;
+	display: block;
+}
+.fa-comments{
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	width: 15.75px;
+	margin: 0 5px 0 0;
+	min-height: auto;
+	min-width: auto;
+	display: block;
 }
 .blog-card__content_a{
     color: rgb(37, 89, 70);
