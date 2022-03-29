@@ -29,7 +29,7 @@
 }
 
 .page-header__bg {
-    background-image: url(../images/backgrounds/page-header-bg-1-1.jpg);
+    background-image: url("/images/backgrounds/page-header-bg-1-1.jpg");
     position: absolute;
     top: 0;
     left: 0;
