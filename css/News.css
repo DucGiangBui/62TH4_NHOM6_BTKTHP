@@ -566,7 +566,7 @@ a:visited {
 .footer {
   margin-top: 180px;
 }
-
+/* .page-header */
 .page-header__bg{
 	
     font-family:Inter,sans-serif ;
@@ -600,15 +600,7 @@ a:visited {
 	max-width: 1200px;
 
 }
-.thm-breadcrumb li{
-    font-size: 16px;
-    line-height: 34px;
-    text-align: center;
-    height: 13px;
-    width: 1170px;
-    display: flex;
-    color: #ffffff;
-}
+
 .container-xxl__bg p{
     font-family: Inter,sans-serif;
     text-align: center;
