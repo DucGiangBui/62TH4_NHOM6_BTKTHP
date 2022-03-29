@@ -1,4 +1,8 @@
-/*page-header */
+#header{
+    z-index: 5;
+    position:fixed;
+  }
+  
 .page-header {
     background-color: #49a760;
     position: relative;
@@ -25,6 +29,7 @@
 }
 
 .page-header__bg {
+    background-image: url("/images/backgrounds/page-header-bg-1-1.jpg");
     position: absolute;
     top: 0;
     left: 0;
@@ -33,6 +38,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 909px;
+    width: 1876px;
 }
 
 .page-header .container-xl {
@@ -49,9 +56,7 @@
       padding-bottom: 80px;
     }
 }
-.page-header-bg img {
-  
-}
+
 .list-unstyled {
     display: flex;
     margin-bottom: 0;
@@ -106,80 +111,3 @@
       font-size: 36px;
     }
   }
-
-.projects-one {
-    padding-top: 150px;
-    padding-bottom: 50px;
-}
-
-.projects-one__single>img {
-    width: 100%;
-}
-
-img {
-    vertical-align: middle;
-    border-style: none;
-}
-
-.projects-one__content{
-    display: flex;
-}
-
-
-.projects-one__content h3{
-    margin: 0;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-@media (min-width: 768px) {
-    .projects-one__content h3 {
-      font-size: 25px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .projects-one__content h3 {
-      max-width: 160px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .projects-one__content h3 {
-      margin-left: 30px;
-      font-size: 30px;
-      margin-bottom: 23px;
-    }
-  }
-
-.projects-one__single:hover .projects-one__content {
-    transform: translateY(-100%);
-    background-color: rgba(247, 195, 95, 0.8);
-  }
-
-  .projects-one__button {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    font-size: 17px;
-    color: #fff;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease;
-  }
-  
-  .projects-one__button:hover {
-    background-color: #fff;
-    color: var(--thm-black);
-}
