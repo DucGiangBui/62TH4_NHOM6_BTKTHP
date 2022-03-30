@@ -36,10 +36,9 @@
 }
 
 .page-header .container-xxl {
-    position: relative;
     z-index: 10;
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 140px;
+    padding-bottom: 130px;
     text-align: center;
 }
 
