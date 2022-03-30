@@ -822,6 +822,66 @@
   background-color: var(--thm-black);
   color: #fff;
 }
+.page-header-about{
+  background-image: url(../images/backgrounds/page-header-bg-1-1.jpg);
+  width: 100%;
+  height: 400px;
+}
+.shape-end-page-header-about{
+  max-width: 100%;
+  position: relative;
+  bottom: -136px;
+}
+.list-unstyled-about {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  padding-top: 130px;
+}
+
+.list-unstyled-about li {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.list-unstyled-about li a {
+  opacity: .7;
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-unstyled-about li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.list-unstyled-about li span {
+  line-height: 1;
+}
+
+.page-header-about .container-xxl h2 {
+  margin: 0;
+  line-height: 1;
+  font-family: var(--special-font);
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .page-header-about .container-xl h2 {
+    font-size: 36px;
+  }
+}
+
 .text-the-team {
   width: 100%;
   padding-top: 40px;
