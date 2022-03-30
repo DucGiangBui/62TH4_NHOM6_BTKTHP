@@ -174,11 +174,11 @@
 .img-first {
   position: relative;
   left: 120px;
+  border-radius: 5px;
 }
 .img-first img {
-  /* z-index: 1; */
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   position: absolute;
   left: -120px;
 }
