@@ -44,7 +44,9 @@ a {
   display: block;
   margin-top: 0;
 }
-
+.dropdown-toggle::after {
+  content: none;
+}
 i {
   margin: 0 20px;
   color: rgba(0, 0, 0, 0.637);
