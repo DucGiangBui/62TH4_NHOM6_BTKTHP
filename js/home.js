@@ -1,10 +1,17 @@
-<script src="http://code.jquery.com/jquery-latest.js"></script>;
-$(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
-    else $(".lentop").fadeOut();
-  });
-  $(".lentop").click(function () {
-    $("body,html").animate({ scrollTop: 0 }, "slow");
-  });
-});
+
+function openComment(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
