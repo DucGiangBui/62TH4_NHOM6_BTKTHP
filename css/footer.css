@@ -82,6 +82,8 @@ a:visited {
 }
 .footer-widget {
   margin-bottom: 40px;
+  margin-left: 50px;
+  justify-content:center;
 }
 .footer-widget__title {
   margin: 0;
