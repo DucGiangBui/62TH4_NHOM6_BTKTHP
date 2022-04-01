@@ -104,5 +104,15 @@
 
 .project-details img{
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
+@media (min-width:1200px){
+  .project-details img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
