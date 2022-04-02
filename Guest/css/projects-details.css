@@ -109,7 +109,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* position: relative; */
 }
 
 @media (min-width:1200px){
@@ -122,20 +121,13 @@
 
 .project-details-list{
   background-color: #f6f5f2;
-  padding: 30px;
-  border-radius: 5px;
   display: flex;
-  position: relative;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
-
-/* @media (min-width: 992px) {
-  .project-details__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-} */
 
 @media (min-width: 1200px){
   .project-details-list{
@@ -161,18 +153,19 @@
 }
 
 @media (min-width: 1200px) {
-  .project-details__list li {
+  .project-details-list li {
     font-size: 18px;
   }
 }
 
-.project-details-list li+li {
+.project-details-list li {
   margin-top: 10px;
+  width: 25%;
 }
 
 .project-details-list li span {
   display: block;
-  color: var(--thm-black);
+  color: #255946;
   line-height: 1;
   font-weight: bold;
 }
@@ -181,6 +174,80 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.project-details h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #255946;
+}
+
+.bottom-content h3{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #255946;
+}
+
+.bottom-content li {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.project-details p{
+  margin: 0;
+}
+
+/* project page */
+.project-page hr{
+  margin: 0;
+  padding: 0;
+  border-color: #e9e7e2;
+  margin-bottom: 80px;
+  border-width: 1px;
+}
+
+.text-center{
+  margin-bottom: 30px;
+}
+
+.text-center .block-title__image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-title__image{
+  background-image: url(../images/loader.png);
+  background-size: 100%;
+  width: 24px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-center p{
+  margin: 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #9ea5a2;
+  letter-spacing: .2em;
+  line-height: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text-center h3{
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: #255946;
 }
 
 
