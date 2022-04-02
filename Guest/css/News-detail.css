@@ -170,7 +170,8 @@
     margin: 0px;
     padding: 120px 0px;
   }
- .col-lg-8 {
+ 
+.col-md-8 {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -193,6 +194,31 @@
     position: relative;
     display: block;
   }
+  .col-md-4{
+    /* Font & Text */
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+
+  
+    /* Color & Background */
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(110, 118, 115);
+  
+    /* Box */
+    height: 2803.82px;
+    width: 676px;
+    margin: 0px;
+    padding: 0px 15px;
+    max-width: 33.3333%;
+
+  
+    /* Positioning */
+    position: relative;
+
+}
   div .blog-details__image {
     /* Font & Text */
     font-family: Inter, sans-serif;
