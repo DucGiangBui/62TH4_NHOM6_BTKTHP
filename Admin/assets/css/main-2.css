@@ -1,3 +1,11 @@
+.logo-image-big {  
+  line-height: 25px;
+  text-align: center;
+  margin: 1em 0;
+}
+.logo-image-big img {
+  vertical-align: middle;
+}
 .tim-row {
   margin-bottom: 20px;
 }
