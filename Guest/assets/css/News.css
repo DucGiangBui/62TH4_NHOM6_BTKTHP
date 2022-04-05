@@ -182,7 +182,6 @@
 .blog-card__content_a{
     color: rgb(37, 89, 70);
     text-decoration: none solid rgb(37, 89, 70);
-	-webkit-transition: all 500ms ease;
   	transition: all 500ms ease;
 	
 }
@@ -280,14 +279,8 @@
 	right: 30px;
 	left: 266px;
 	display: flex;
-	display: -webkit-box;
-  	display: -ms-flexbox;
-  	-webkit-box-pack: center;
-      	-ms-flex-pack: center;
-          	justify-content: center;
-  	-webkit-box-align: center;
-      	-ms-flex-align: center;
-         	align-items: center;
+	justify-content: center;
+    align-items: center;
 
 	/* Effects */
 	box-sizing: border-box;
