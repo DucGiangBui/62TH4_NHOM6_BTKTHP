@@ -252,6 +252,7 @@
   margin-bottom: -30px;
   position: relative;
   padding: 20px;
+  z-index: 10;
   border-radius: 5px;
 }
 
