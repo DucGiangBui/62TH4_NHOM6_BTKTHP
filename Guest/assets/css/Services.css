@@ -101,7 +101,7 @@
     /* Positioning */
     position: relative;
   }
-  .col-md-4{
+  .col-md-4-page{
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -270,7 +270,7 @@
     padding: 0px 0px 120px;
 
   }
-  .col-md-6 {
+  .col-md-6-page {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -349,7 +349,7 @@
     color: #fff;
     transition: all 500ms ease;
   }
-  .col-md-6 img {
+  .col-md-6-page img {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -538,7 +538,7 @@
     width: 1170px;
   
 }
-.col-md-4 {
+.col-md-4-page {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
@@ -664,7 +664,7 @@
     position: relative;
 }
 
-.col-md-5{
+.col-md-5-page{
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
@@ -685,7 +685,7 @@
 	position: relative;
 
 }
-.col-md-7 {
+.col-md-7-page {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
