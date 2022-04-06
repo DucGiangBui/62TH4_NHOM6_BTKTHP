@@ -2672,42 +2672,6 @@ img {
 
 }
 
-.block-title {
-  /* Font & Text */
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 34px;
-  text-align: center;
-
-  /* Color & Background */
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(110, 118, 115);
-
-  /* Box */
-  height: 124.194px;
-  width: 1170px;
-  margin: 0px 0px 60px;
-
-}
-
-.block-title h3 {
-  /* Font & Text */
-  font-family: Inter, sans-serif;
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 55.2px;
-  text-align: center;
-
-  /* Color & Background */
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(37, 89, 70);
-
-  /* Box */
-  height: 55.1944px;
-  width: 1170px;
-
-}
 
 .col-md-4-page {
   /* Font & Text */
