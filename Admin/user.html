@@ -15,6 +15,7 @@
   <link href="assets/css/main.css" rel="stylesheet" />
   <!-- <link href="assets/css/main-2.css" rel="stylesheet" /> -->
 </head>
+
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
@@ -134,43 +135,44 @@
             <div class="d-flex justify-content-center">
               <button type="submit" id="create" class="btn btn-success btn-form-manager">Add</button>
               <button type="button" id="read" class="btn btn-info btn-form-manager" onclick="read_data()">Read</button>
-              <button id="update" class="btn btn-warning btn-form-manager" onclick="update_user()" type="button">Update</button>
-              <button id="delete" type="button" class="btn btn-danger btn-form-manager" onclick="delete_all()">Delete</button>
+              <button id="update" class="btn btn-warning btn-form-manager" onclick="update_user()"
+                type="button">Update</button>
+              <button id="delete" type="button" class="btn btn-danger btn-form-manager"
+                onclick="delete_all()">Delete</button>
             </div>
           </div>
         </form>
-
-        <div class="content">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
-                <div class="card-header">
-                  <h4 class="card-title">User</h4>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead class="thead text-primary">
-                        <tr>
-                          <th>#</th>
-                          <th>Username</th>
-                          <th>Email</th>
-                          <th>Password</th>
-                          <th>Edit</th>
-                          <th>Delete</th>
-                        </tr>
-                      </thead>
-                      <tbody id="data">
-                      </tbody>
-                    </table>
-                  </div>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title">User</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="thead text-primary">
+                      <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody id="data">
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-      <footer class="footer footer-black  footer-white ">
+      </div>
+      <footer class="footer footer-black footer-white ">
         <div class="container-fluid">
           <div class="row">
             <nav class="footer-nav">
@@ -191,7 +193,6 @@
           </div>
         </div>
       </footer>
-      </div>
     </div>
   </div>
   <script src="./assets/js/core/jquery.min.js"></script>
