@@ -76,7 +76,7 @@
     margin: 0px;
     padding: 120px 0px;
   }
- .col-lg-8 {
+ .col-lg-8-details {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -99,7 +99,7 @@
     position: relative;
     display: block;
   }
-  .col-lg-4 {
+  .col-lg-4-details {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -122,7 +122,7 @@
     position: relative;
 
   }
-  div .blog-details__image {
+  .blog-details__image {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -139,7 +139,7 @@
     width: 770px;
 
   }
-  div .blog-card__content {
+  .blog-card__content {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 16px;
@@ -164,7 +164,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  div .blog-card__date {
+  .blog-card__date {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 14px;
@@ -196,6 +196,8 @@
     right: 30px;
     left: 666px;
     display: flex;
+    justify-content: center;
+    align-items: center;
   
     /* Effects */
 
@@ -250,6 +252,7 @@
 	width: 100px;
 	font-size: 14px;
 	display: flex;
+  text-decoration: none;
 }
 .blog-card__meta_a2{
   font-weight: 600;
@@ -259,6 +262,7 @@
 	height: 14px;
 	width: 160.713px;
 	font-size: 14px;
+  text-decoration: none;
 }
 .fa-user-circle{
 	font-size: 14px;
@@ -347,6 +351,17 @@
 	height: 51px;
 	width: 306px;
 }
+.blog-detail__tags a{
+  text-decoration: none;
+  color: #255946;
+}
+.blog-detail__tags a:hover{
+  color: #49A760;
+}
+.blog-detail__tags span{
+  font-size: 24px;
+  color: #255946;
+}
 .blog-details__social {
   text-align: left;
   display: flex;
@@ -365,6 +380,7 @@
   justify-content: center;
   font-size: 14px;
   color: #6e7673;
+  text-decoration: none;
 
 }
 .social-tw{
@@ -377,7 +393,7 @@
   background-color: #f7c35f;
   color: #fff;
 }
-div .blog-author {
+.blog-author {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
@@ -682,7 +698,7 @@ div .blog-author {
     width: 770px;
     margin: 0px 0px 50px;
 }
-.col-md-6 {
+.col-md-6-bg {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
@@ -705,7 +721,7 @@ div .blog-author {
 	position: relative;
 
 }
- .comment-form .col-md-12 {
+ .comment-form .col-md-12-bg {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
