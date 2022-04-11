@@ -1,35 +1,35 @@
+// window.localStorage.setItem('data_blog', JSON.stringify(data));
 
-// window.localStorage.setItem('data_user', JSON.stringify(data));
-id = localStorage.length;
-userForm.id.value = id;
+stt = localStorage.length+1;
+userForm.stt.value = stt;
 
 function delete_user(obj){
     row = obj.parentElement.parentElement;
-    id = row.firstElementChild.innerHTML;
-    localStorage.removeItem(id);
+    stt = row.firstElementChild.innerHTML;
+    localStorage.removeItem(stt);
     row.remove();
 }
 
 function edit_user(obj) {
     row = obj.parentElement.parentElement.children;
-    userForm.id.value = row[0].innerHTML;
-    userForm.username.value = row[1].innerHTML;
-    userForm.email.value = row[2].innerHTML;
-    userForm.password.value = row[3].innerHTML;
+    userForm.stt.value = row[0].innerHTML;
+    userForm.poster.value = row[1].innerHTML;
+    userForm.title.value = row[2].innerHTML;
+    userForm.content.value = row[3].innerHTML;
 }
 
 function update_user() {
-var id = userForm.id.value;
-var username = userForm.username.value;
-    var email = userForm.email.value;
-    var password = userForm.password.value;
+var stt = userForm.stt.value;
+var poster = userForm.poster.value;
+    var title = userForm.title.value;
+    var content = userForm.content.value;
     user = {
-        id: id,
-        username: username,
-        email: email,
-        password: password
+        stt: stt,
+        poster: poster,
+        title: title,
+        content: content
     };
-    localStorage.setItem(id, JSON.stringify(user));
+    localStorage.setItem(stt, JSON.stringify(user));
     read_data();
 }
 function delete_all(){
@@ -40,15 +40,15 @@ function delete_all(){
 
 function create_user() {
     event.preventDefault();
-    var username = userForm.username.value;
-    var email = userForm.email.value;
-    var password = userForm.password.value;
+    var poster = userForm.poster.value;
+    var title = userForm.title.value;
+    var content = userForm.content.value;
 
     user = {
-        id: id,
-        username: username,
-        email: email,
-        password: password
+        stt: stt,
+        poster: poster,
+        title: title,
+        content: content
     };
 
     tbody = document.getElementById("data");
@@ -61,20 +61,19 @@ function create_user() {
     cell4 = row.insertCell(4);
     cell5 = row.insertCell(5);
 
-    cell0.innerHTML = id;
-    cell1.innerHTML = username;
-    cell2.innerHTML = password;
-    cell3.innerHTML = email;
+    cell0.innerHTML = stt;
+    cell1.innerHTML = poster;
+    cell2.innerHTML = title;
+    cell3.innerHTML = content;
     cell4.innerHTML = '<i class="fas fa-edit"></i>';
     cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
 
-    localStorage.setItem(id, JSON.stringify(user));
-    id++;
-    userForm.id.value = id;
-
-    userForm.username.value = null;
-    userForm.email.value = null;
-    userForm.password.value = null;
+    localStorage.setItem(stt, JSON.stringify(user));
+    stt++;
+    userForm.stt.value = stt;
+    userForm.poster.value = null;
+    userForm.title.value = null;
+    userForm.content.value = null;
 
 }
 
@@ -95,10 +94,10 @@ function read_data() {
         cell5 = row.insertCell(5);
         user_data = JSON.parse(localStorage.getItem(localStorage.key(i)));
 
-        cell0.innerHTML = user_data.id;
-        cell1.innerHTML = user_data.username;
-        cell2.innerHTML = user_data.email;
-        cell3.innerHTML = user_data.password;
+        cell0.innerHTML = user_data.stt;
+        cell1.innerHTML = user_data.poster;
+        cell2.innerHTML = user_data.title;
+        cell3.innerHTML = user_data.content;
     cell4.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
     cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
 
