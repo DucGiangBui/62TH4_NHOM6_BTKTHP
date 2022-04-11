@@ -13,7 +13,7 @@ header {
 }
 .navbar-collapse {
   align-items: center;
-  background-color: rgb(252, 252, 252);
+  background-color: rgb(248, 249, 250);
   border-radius:5px ;
 }
 .container-fluid {
@@ -551,6 +551,10 @@ a:visited {
     font-size: 15px;
   }
 }
+.positions-i{
+  position: absolute;
+  top: 7px;
+}
 .links{
     padding: 0;
     list-style: none;
@@ -568,7 +572,12 @@ a:visited {
 .shape-start-footer img{
   width: 100%;
 }
-
+.footer-widget >ul>li>a{
+  text-decoration: none;
+}
+.footer-widget__contact >li>a{
+  text-decoration: none;
+}
 .footer {
   margin-top: 180px;
 }
