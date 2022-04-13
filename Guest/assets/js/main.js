@@ -59,11 +59,12 @@ function checkMessage() {
   }
 }
 function checksubject() {
-  var subject = $('#txtsubject');
-  if (subject.val() === '') {
-    return false;
+  var subject = document.getElementById("txtsubject");
+  let subjectRegex = /^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$/;
+  if (subjectRegex.test(subject.value)) {
+    return true;
   }
-  return true;
+  return false;
 }
 
 
@@ -150,7 +151,7 @@ register.addEventListener("click", function (e) {
     statusOfsubject.style.fontSize = "13px";
     statusOfsubject.style.marginLeft = "10px";
   }
-  
+
   if (checkName() && checkEmail() && checkPhoneNumber() && checkMessage() && checksubject()) {
     statusOfNoti.textContent = " Send Complete !";
     statusOfNoti.style.color = "green";

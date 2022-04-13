@@ -281,7 +281,6 @@
 }
 
 .block-title {
-  margin-top: 100px;
   margin-bottom: 25px;
 }
 
@@ -1688,7 +1687,6 @@ contacts
 .contact-social a+a {
   margin-left: 10px;
 }
-
 .contact-form {
   margin-top: 40px;
 }
@@ -1720,7 +1718,8 @@ contacts
   height: 60px;
   font-size: 14px;
   color: #6e7673;
-  margin-bottom: 20px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 
 .contact-form textarea {
@@ -4151,7 +4150,6 @@ textarea {
 }
 
 .mg-b {
-
   margin-bottom: 10px;
   margin-top: 10px;
 }
