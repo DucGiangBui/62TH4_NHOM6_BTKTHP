@@ -1621,7 +1621,9 @@ body {
   }
 
 }
-
 .red-hover:hover >a>i p{
   color: red;
+}
+.form-group input{
+  margin: 20px 0;
 }
