@@ -127,12 +127,14 @@
         <form onsubmit="create_user()" name="userForm">
           <div class="form-group">
             <input class="form-control" type="text" name="id" autocomplete="off" value="ID" disabled>
-
-            <input class="form-control" type="text" name="username" placeholder="username" autocomplete="off">
-            <input class="form-control" type="email" name="email" placeholder="email" autocomplete="off">
-            <input class="form-control" type="text" name="password" placeholder="password" autocomplete="off">
+            <input id="txtUserID" class="form-control" type="text" name="username" placeholder="username" autocomplete="off">
+            <span id="statusOfEmail" class="mg-b"></span>
+            <input id="txtEmail" class="form-control" type="email" name="email" placeholder="email" autocomplete="off">
+            <span id="statusOfEmail" class="mg-b"></span>
+            <input id="txtPW" class="form-control" type="text" name="password" placeholder="password" autocomplete="off">
+            <span id="statusOfEmail" class="mg-b"></span>
             <div class="d-flex justify-content-center">
-              <button type="submit" id="create" class="btn btn-success btn-form-manager">Add</button>
+              <button type="submit" id="create btnRegister" class="btn btn-success btn-form-manager">Add</button>
               <button type="button" id="read" class="btn btn-info btn-form-manager" onclick="read_data()">Read</button>
               <button id="update" class="btn btn-warning btn-form-manager" onclick="update_user()"
                 type="button">Update</button>

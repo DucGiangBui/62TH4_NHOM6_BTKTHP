@@ -1,35 +1,22 @@
-// CACH 1
-// let userID = document.querySelector('#txtUserID')
-// let statusOfUserID = document.querySelector('#txtStatusOfUserID')
 
-// userID.addEventListener('focus',function(){
-//     this.style.border = 'ipx solid red';
-// })
+// Back-to-top
+window.onscroll = function() {scrollFunction()};
+let btn_back_to_top = document.getElementById("myBtn")
+function scrollFunction() {
+ 
+if ( document.documentElement.scrollTop > 1) {
+  btn_back_to_top.style.display = "block";
+  btn_back_to_top.style.transition = " all 2s"
+} else {
+  btn_back_to_top.style.display = "none";
+}
+}
+ 
+btn_back_to_top.addEventListener("click", function(){
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+});
 
-// userID.addEventListener('focusout',leaveUserID)
-
-// function leaveUserID(){
-// //     if(userID.value.length >=5 && userID.value <=12){
-// //         statusOfUserID.textContent = 'User ID hợp lệ !';
-// //         statusOfUserID.style.color = 'green';
-// //     }
-// //     else{
-// //         statusOfUserID.textContent = 'User ID không hợp lệ !';
-// //         statusOfUserID.style.color = 'red';
-// //     }
-
-//     var userIDRegex = /^[a-zA-z0-9]{5,12}$/;
-//     if(userID.value.length >=5 && userID.value <=12){
-//         statusOfUserID.textContent = 'User ID hợp lệ !';
-//         statusOfUserID.style.color = 'green';
-//     }
-//     else{
-//         statusOfUserID.textContent = 'User ID không hợp lệ !';
-//         statusOfUserID.style.color = 'red';
-//     }
-// }
-
-// CACH 2
 
 function checkName() {
   let Name = document.getElementById("txtName");
@@ -81,7 +68,7 @@ function checksubject() {
 
 
 
-let register = document.getElementById("btnRegister");
+let register = document.getElementById("btnSend");
 
 register.addEventListener("click", function (e) {
   e.preventDefault();
@@ -90,8 +77,8 @@ register.addEventListener("click", function (e) {
   let statusOfEmail = document.getElementById("statusOfEmail");
   let statusOfPhone = document.getElementById("statusOfPhone");
   let statusOfMess = document.getElementById("statusOfMess");
-  let statusOfsubject = document.getElementById("statusOfsubject");
   let statusOfNoti = document.getElementById("statusOfNoti");
+  let statusOfsubject = document.getElementById("statusOfsubject");
 
 
   if (checkName() == false) {
@@ -137,6 +124,21 @@ register.addEventListener("click", function (e) {
     statusOfMess.textContent = " ";
     statusOfMess.style.color = "green";
   }
+  
+  if (checkName() && checkEmail() && checkPhoneNumber() && checkMessage()) {
+    statusOfNoti.textContent = " Send Complete !";
+    statusOfNoti.style.color = "green";
+    statusOfNoti.style.fontWeight = "700";
+    statusOfNoti.style.fontSize = "16px";
+    statusOfNoti.style.marginLeft = "10px";
+  } else {
+    statusOfNoti.textContent = "Please complete the form !";
+    statusOfNoti.style.color = "red";
+    statusOfNoti.style.fontWeight = "700";
+    statusOfNoti.style.fontSize = "16px";
+    statusOfNoti.style.marginLeft = "10px";
+  }
+  
   if (checksubject()) {
     statusOfsubject.textContent = " ";
     statusOfsubject.style.color = "green";
@@ -148,6 +150,7 @@ register.addEventListener("click", function (e) {
     statusOfsubject.style.fontSize = "13px";
     statusOfsubject.style.marginLeft = "10px";
   }
+  
   if (checkName() && checkEmail() && checkPhoneNumber() && checkMessage() && checksubject()) {
     statusOfNoti.textContent = " Send Complete !";
     statusOfNoti.style.color = "green";
@@ -163,29 +166,3 @@ register.addEventListener("click", function (e) {
   }
   
 });
-
-// CACH 3: Using JQUERY
-
-// $(document).ready(function(){
-
-//     function checkUserID() {
-//         let userID = $("#txtUserID").val();
-//         let userIDRegex = /^[a-zA-z0-9]{5,12}$/;
-//         if (userIDRegex.test(userID)) {
-//             return true;
-//         }
-//         return false;
-//     }
-
-//     $("#btnRegister").click(function(e){
-//         e.preventDefault();
-//         if(checkUserID()){
-//             $("#statusOfUserID").text('User ID hợp lệ !')
-//             $("#statusOfUserID").css('color','blue')
-//         }
-//         else{
-//             $("#statusOfUserID").text('User ID không hợp lệ !')
-//             $("#statusOfUserID").css('color','red')
-//         }
-//     })
-// })
