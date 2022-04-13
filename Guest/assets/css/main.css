@@ -3159,7 +3159,7 @@ img {
 
 .blog-card__meta a i {
 	color: var(--thm-base);
-	margin-right: 10px;
+	margin-left: -0px;
 	font-size: 12px;
 }
 .blog-card__content_news_h3{
@@ -3923,6 +3923,12 @@ textarea {
 
 .blog-siderbar__tags-links a:hover {
   color: #49A760
+}
+
+.blog-card__meta_a3 i {
+	color: var(--thm-base);
+	margin-left: -0px;
+	font-size: 12px;
 }
 .blog-card__meta_a3{
   font-weight: 600;
