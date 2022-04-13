@@ -215,19 +215,24 @@
                         <form action="" class="form-bg">
                             <div class="row">
                                 <div class="col-md-6 col-md-6-bg">
-                                    <input type="text" name="name" placeholder="Full Name">
+                                    <input type="text" name="name" id="txtname" placeholder="Full Name">
+                                    <span id="statusOfname" class="sp"></span>
                                 </div>
                                 <div class="col-md-6 col-md-6-bg">
-                                    <input type="text" name="email" placeholder="Email Address">
+                                    <input type="text" name="email" id="txtemail" placeholder="Email Address">
+                                    <span id="statusOfemail" class="sp"></span>
                                 </div>
                                 <div class="col-md-6 col-md-6-bg">
-                                    <input type="text" name="phone" placeholder="Phone Number">
+                                    <input type="text" name="phone" id="txtphone" placeholder="Phone Number">
+                                    <span id="statusOfphone" class="sp"></span>
                                 </div>
                                 <div class="col-md-6 col-md-6-bg">
-                                    <input type="text" name="subject" placeholder="Subject">
+                                    <input type="text" name="subject" id="txtsubject" placeholder="Subject">
+                                    <span id="statusOfsubject" class="sp"></span>
                                 </div>
                                 <div class="col-md-12 col-md-12-bg">
-                                    <textarea name="message" placeholder="Write Message"></textarea>
+                                    <textarea name="message" id="txtmessage" placeholder="Write Message"></textarea>
+                                    <span id="statusOfmessage" class="sp"></span>
                                 </div>
                                 <div class="col-md-12 col-md-12-bt">
                                     <button type="submit" class="thm-btn">Submit Comment</button>
@@ -404,7 +409,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./assets/js/New-details.js"></script>
     <script src="./assets/js/home.js"></script>
     <script src="./assets/https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/assets/js/swiper.min.js"></script>
