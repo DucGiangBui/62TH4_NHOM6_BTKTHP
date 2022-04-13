@@ -784,7 +784,7 @@
   font-weight: 500;
 }
 .contact-one__form {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .contact-one__form .row {
   margin-left: -10px;
@@ -809,7 +809,8 @@
   height: 60px;
   font-size: 14px;
   color: #6e7673;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .contact-one__form textarea {
   height: 150px;
@@ -3604,22 +3605,21 @@ img {
 	font-weight: 400;
 	line-height: 34px;
 	text-align: left;
-
-	/* Color & Background */
 	background-color: rgba(0, 0, 0, 0);
 	color: rgb(110, 118, 115);
-
-	/* Box */
 	height: 91px;
 	width: 395px;
 	padding: 0px 10px;
 	max-width: 50%;
-
-
-	/* Positioning */
 	position: relative;
 
 }
+/* .col-md-6-bg input{
+  margin:10px 0;
+}
+textarea{
+  margin:10px 0;
+} */
  .comment-form .col-md-12-bg {
 	/* Font & Text */
 	font-family: Inter, sans-serif;
@@ -3649,19 +3649,13 @@ input {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 29.75px;
-
-	/* Color & Background */
 	background-color: rgb(246, 245, 242);
 	color: rgb(110, 118, 115);
-
-	/* Box */
 	height: 71px;
 	width: 375px;
 	margin: 0px 0px 20px;
 	padding: 1px 20px 1px 30px;
   border: 0;
-
-  /* Effects */
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -3675,20 +3669,13 @@ textarea {
 	font-weight: 400;
 	line-height: 29.75px;
 	text-decoration: none solid rgb(110, 118, 115);
-
-
-	/* Color & Background */
 	background-color: rgb(246, 245, 242);
 	color: rgb(110, 118, 115);
-
-	/* Box */
 	height: 199px;
 	width: 770px;
 	margin: 0px 0px 20px;
 	padding: 20px 20px 2px 30px;
   border: 0;
-
-  /* Effects */
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -3700,24 +3687,14 @@ textarea {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 34px;
-
-
-	/* Color & Background */
 	background-color: rgba(0, 0, 0, 0);
 	color: rgb(110, 118, 115);
-
-	/* Box */
 	height: 71.25px;
 	width: 790px;
 	margin: 0px;
 	padding: 0px 10px;
 	max-width: 100%;
-
-
-	/* Positioning */
 	position: relative;
-
-
 }
 .col-md-12-bt .thm-btn {
 	/* Font & Text */
@@ -3725,19 +3702,13 @@ textarea {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 38.25px;
-
-
-	/* Color & Background */
 	background-attachment: scroll;
 	background-color: rgb(247, 195, 95);
 	color: rgb(255, 255, 255);
-
-	/* Box */
 	height: 71.25px;
 	width: 232.25px;
 	padding: 16.5px 39.5px;
   border: 0;
-
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -3747,18 +3718,13 @@ textarea {
   background-color: #255946;
 }
 .blog-sidebar {
-	/* Font & Text */
 	font-family: Inter, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 34px;
 	text-align: left;
-
-	/* Color & Background */
 	background-color: rgba(0, 0, 0, 0);
 	color: rgb(110, 118, 115);
-
-	/* Box */
 	height: 1247px;
 	width: 370px;
 
@@ -3965,5 +3931,11 @@ textarea {
 	font-size: 14px;
   text-decoration: none;
   margin:-15px;
+}
+
+.mg-b{
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
