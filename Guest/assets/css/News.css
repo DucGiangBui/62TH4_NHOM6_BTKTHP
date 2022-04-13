@@ -113,22 +113,15 @@
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 60px 0px;
 	
 }
-.blog-card__meta{
-    display: flex;
-	height: 14px;
-}
+
 .blog-card__meta_a1{
     color: #6e7673;
-	height: 14px;
-	width: 160.713px;
 	font-size: 14px;
 	text-decoration: none;
 }
 .blog-card__meta_a2{
     color: #6e7673;
     margin:0 0 0 15px;
-	height: 14px;
-	width: 160.713px;
 	font-size: 14px;
 	text-decoration: none;
 }
