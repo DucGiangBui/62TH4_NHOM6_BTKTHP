@@ -635,6 +635,7 @@
 .blog-card__meta {
   display: flex;
   align-items: center;
+  margin-left: 20px; 
 }
 .blog-card__meta a {
   display: flex;
@@ -3879,7 +3880,7 @@ textarea {
 }
 
 .blog-sidebar__posts ul {
-  margin-left: -20px;
+  margin-left: -50px;
   margin-right: -20px;
 }
 
@@ -3919,7 +3920,9 @@ textarea {
 
 .blog-sidebar__posts ul li span > i {
   font-size: 14px;
-  margin-right: 5px;
+}
+.blog-sidebar__posts ul li span i {
+  margin-left: 20px;
 }
 
 .blog-sidebar__posts ul li h4 {
@@ -4006,5 +4009,14 @@ textarea {
 
 .blog-siderbar__tags-links a:hover {
   color: #49A760
+}
+.blog-card__meta_a3{
+  font-weight: 600;
+  line-height: 14px;
+  color: var(--thm-base);
+	height: 14px;
+	font-size: 14px;
+  text-decoration: none;
+  margin:-15px;
 }
 
