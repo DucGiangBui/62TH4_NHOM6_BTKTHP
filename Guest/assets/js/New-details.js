@@ -30,56 +30,59 @@ $(document).ready(function () {
         }
         return true;
     }
-    function checkmessage(){
+    function checkmessage() {
         var message = $('#txtmessage');
         if (message.val() === '') {
             return false;
         }
         return true;
     }
-    $('#btnRegister').click(function(e){
+    $('#btnRegister').click(function (e) {
         e.preventDefault();
-        if(checkname()){
+        if (checkname()) {
             $("#statusOfname").text('Valid name!')
-            $("#statusOfname").css('color','blue')
+            $("#statusOfname").css('color', 'blue')
         }
-        else{
+        else {
             $("#statusOfname").text('Invalid name!')
-            $("#statusOfname").css('color','red')
+            $("#statusOfname").css('color', 'red')
         }
-        if(checkemail()){
+        if (checkemail()) {
             $("#statusOfemail").text('Valid email!')
-            $("#statusOfemail").css('color','blue')
+            $("#statusOfemail").css('color', 'blue')
         }
-        else{
+        else {
             $("#statusOfemail").text('Invalid email!')
-            $("#statusOfemail").css('color','red')
+            $("#statusOfemail").css('color', 'red')
         }
-        if(checkphone()){
+        if (checkphone()) {
             $("#statusOfphone").text('Valid phone!')
-            $("#statusOfphone").css('color','blue')
+            $("#statusOfphone").css('color', 'blue')
         }
-        else{
+        else {
             $("#statusOfphone").text('Invalid phone!')
-            $("#statusOfphone").css('color','red')
+            $("#statusOfphone").css('color', 'red')
         }
-        if(checksubject()){
-            $("#statusOfsubject").text('Valid subject!')
-            $("#statusOfsubject").css('color','blue')
+        if (checksubject()) {
+            statusOfsubject.textContent = " ";
+            statusOfsubject.style.color = "green";
         }
-        else{
-            $("#statusOfsubject").text('This field is required!')
-            $("#statusOfsubject").css('color','red')
+        else {
+            statusOfsubject.textContent = "Please enter a text before sending !";
+            statusOfsubject.style.color = "red";
+            statusOfsubject.style.fontWeight = "700";
+            statusOfsubject.style.fontSize = "13px";
+            statusOfsubject.style.marginLeft = "10px";
         }
-        if(checkmessage()){
+        if (checkmessage()) {
             $("#statusOfmessage").text('Valid message!')
-            $("#statusOfmessage").css('color','blue')
+            $("#statusOfmessage").css('color', 'blue')
         }
-        else{
+        else {
             $("#statusOfmessage").text('This field is required!')
-            $("#statusOfmessage").css('color','red')
+            $("#statusOfmessage").css('color', 'red')
         }
-        
+
 
 
     })
