@@ -164,7 +164,7 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .blog-card__date {
+  .blog-card__date_details {
     /* Font & Text */
     font-family: Inter, sans-serif;
     font-size: 14px;
