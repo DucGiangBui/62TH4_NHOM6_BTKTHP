@@ -28,6 +28,55 @@ body {
   height: 100%;
 }
 
+.tct {
+  text-align: center;
+}
+.text-center {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--thm-black);
+}
+
+
+.non-deco:hover .card-body {
+  font-size: 16px;
+  margin: 0px;
+  transition: 300ms ease-in-out;
+  position: relative;
+  animation-name: example;
+  animation-duration: .5s;
+  top: 20px;
+}
+
+@keyframes example {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 20px;
+  }
+}
+.pd-5{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.non-deco:hover .card-footer .stats {
+  text-decoration: none;
+  font-size: 10px;
+  position: relative;
+  bottom: -10px;
+  transition: 0.2s ease-in-out;
+  
+}
+
+.non-deco:hover .card-footer hr {
+  font-size: 10px;
+  position: relative;
+  bottom: -20px;
+  transition: 0.5s ease-in-out;
+}
+
 .collapse {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -50,10 +99,159 @@ body {
   height: 100%;
 }
 
+.description,
+.card-description,
+.footer-big p,
+.card .footer .stats {
+  color: #9a9a9a;
+  font-weight: 300;
+}
+
+.category,
+.card-category {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #9a9a9a;
+  font-size: 0.7142em;
+}
+
+.card-category {
+  font-size: 1em;
+}
+
+.text-primary,
+a.text-primary:focus,
+a.text-primary:hover {
+  color: #51cbce !important;
+}
+
+.text-info,
+a.text-info:focus,
+a.text-info:hover {
+  color: #51bcda !important;
+}
+
+.text-success,
+a.text-success:focus,
+a.text-success:hover {
+  color: #6bd098 !important;
+}
+
+.text-warning,
+a.text-warning:focus,
+a.text-warning:hover {
+  color: #fbc658 !important;
+}
+
+.text-danger,
+a.text-danger:focus,
+a.text-danger:hover {
+  color: #ef8157 !important;
+}
+
+.text-gray,
+a.text-gray:focus,
+a.text-gray:hover {
+  color: #e3e3e3 !important;
+}
+
+.text-pink-light,
+a.text-pink-light:focus,
+a.text-pink-light:hover {
+  color: #fcdcdf !important;
+}
+
+.text-fb,
+a.text-pink-dark:focus,
+a.text-pink-dark:hover {
+  color: #4267b2 !important;
+}
+
+.text-purple,
+a.text-purple:focus,
+a.text-purple:hover {
+  color: #c997c6 !important;
+}
+
+.text-purple-1,
+a.text-purple-1:focus,
+a.text-purple-1:hover {
+  color: #b49fdc !important;
+}
+
+.text-yellow,
+a.text-yellow:focus,
+a.text-yellow:hover {
+  color: #fefd97 !important;
+}
+
+.text-aqua-light,
+a.text-aqua-light:focus,
+a.text-aqua-light:hover {
+  color: #b0efef !important;
+}
+
+.text-aqua-dark,
+a.text-aqua-dark:focus,
+a.text-aqua-dark:hover {
+  color: #83d9dc !important;
+}
+
+.text-pink-red,
+a.text-pink-red:focus,
+a.text-pink-red:hover {
+  color: #ff756d !important;
+}
+
+.xanhbodoi {
+  color: #8da290 !important;
+}
+
+.nau {
+  color: #a29574 !important;
+}
+
+.xanhtimthan {
+  color: #3b3da1 !important;
+}
+
+.mgt{
+  padding-top: 50px;
+}
+
 .cs-df {
   cursor: default;
 }
 
+#myBtn i{
+  color: var(--thm-primary);
+  margin:0;
+}
+
+#myBtn:hover {
+  background-color: #fff;
+  transition: 100ms;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 20;
+  border: none;
+  outline: none;
+  background-color: var(--thm-base);
+  border: 2px solid #ccc;
+  color: var(--thm-primary);
+  cursor: pointer;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+}
+#myBtn:hover i{
+  color: var(--thm-base);
+  transition: 100ms;
+}
 .formRegister {
   max-width: 100%;
   height: 100%;
@@ -275,7 +473,6 @@ body {
 .text-center {
   font-size: 40px;
   font-weight: 600;
-  color: var(--thm-black);
 }
 
 .btn-form-manager {
