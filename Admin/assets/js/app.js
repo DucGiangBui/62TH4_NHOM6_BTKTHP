@@ -19,8 +19,8 @@ function edit_user(obj) {
 }
 
 function update_user() {
-var id = userForm.id.value;
-var username = userForm.username.value;
+    var id = userForm.id.value;
+    var username = userForm.username.value;
     var email = userForm.email.value;
     var password = userForm.password.value;
     user = {
@@ -99,8 +99,8 @@ function read_data() {
         cell1.innerHTML = user_data.username;
         cell2.innerHTML = user_data.email;
         cell3.innerHTML = user_data.password;
-    cell4.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
-    cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
+        cell4.innerHTML = `<span onclick="edit_user(this)"><i class="fas fa-edit"></i><span>`;
+        cell5.innerHTML = `<span onclick="delete_user(this)"><i class="fas fa-trash"></i><span>`;
 
     }
 
